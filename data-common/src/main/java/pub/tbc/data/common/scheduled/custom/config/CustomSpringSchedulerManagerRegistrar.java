@@ -18,8 +18,10 @@ public class CustomSpringSchedulerManagerRegistrar implements ImportBeanDefiniti
 
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
+        // 注册调度管理器
         BeanDefinition managerBeanDefinition = new RootBeanDefinition(DefaultTaskManager.class);
         registry.registerBeanDefinition(MANAGER_BEAN_NAME, managerBeanDefinition);
+        // 注册初始化
         BeanDefinition initBeanDefinition = new RootBeanDefinition(CustomSpringSchedulerInitializer.class);
         registry.registerBeanDefinition(INIT_BEAN_NAME, initBeanDefinition);
     }

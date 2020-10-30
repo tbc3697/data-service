@@ -6,6 +6,8 @@ import org.springframework.core.annotation.AliasFor;
 import java.lang.annotation.*;
 
 /**
+ * 启用基于spring  scheduler 的自定义调度功能
+ *
  * @Author tbc by 2020-10-25
  */
 @Target(ElementType.TYPE)

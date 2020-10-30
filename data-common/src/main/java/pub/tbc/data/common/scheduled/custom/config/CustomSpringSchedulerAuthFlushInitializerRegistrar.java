@@ -7,6 +7,8 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
+ * 任务自动刷新功能注册
+ *
  * @Author tbc by 2020-10-25
  */
 public class CustomSpringSchedulerAuthFlushInitializerRegistrar implements ImportBeanDefinitionRegistrar {

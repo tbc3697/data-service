@@ -8,6 +8,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 import javax.inject.Inject;
 
 /**
+ * 开启任务自动刷新功能
+ *
  * @Author tbc by 2020-10-25
  */
 public class CustomSpringSchedulerAutoFlushInitializer implements ApplicationRunner {

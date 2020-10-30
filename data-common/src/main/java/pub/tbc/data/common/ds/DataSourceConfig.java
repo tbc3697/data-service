@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 import java.util.Map;
 
 /**
- * contract 数据源配置类
+ * 数据源配置类
  *
  * @author tbc
  * @date 2020-10-25
@@ -29,7 +29,7 @@ public class DataSourceConfig {
 
     @Bean(name = "dynamicDataSource")
     public DataSource dynamicDataSource(DataSourceProperties dsProperties) {
-        // 若是权限放开，就可以直接使用合约的 apollo 中的数据源配置动态创建数据源，新增不需要重启
+        //  TODO : 可以直接使用 apollo 中的数据源配置动态创建数据源，新增或修改不需要重启，后续实现
         Map<Object, Object> dataSourceMap = Maps.newHashMap();
         dsProperties.getContract().forEach((k, v) -> {
             String key = dataSourceKeyFormat(k);

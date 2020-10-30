@@ -8,6 +8,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 import javax.inject.Inject;
 
 /**
+ * 项目启动后，执行一次任务初始化
+ *
  * @Author tbc by 2020-10-25
  */
 public class CustomSpringSchedulerInitializer implements ApplicationRunner {

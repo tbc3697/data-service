@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 
 /**
+ * 启用任务自动刷新
+ *
  * @Author tbc by 2020-10-25
  */
 @Target(ElementType.TYPE)

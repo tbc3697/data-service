@@ -20,6 +20,13 @@ public class XxlJobHandler extends IJobHandler {
     @Inject
     private ApplicationContext applicationContext;
 
+    /**
+     * 需要在 XXL任务中将执行任务的 springBean 名称配置为参数传过来
+     *
+     * @param springBeanName
+     * @return
+     * @throws Exception
+     */
     @Override
     public ReturnT<String> execute(String springBeanName) throws Exception {
         IDataTask dataTask = applicationContext.getBean(springBeanName, IDataTask.class);

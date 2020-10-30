@@ -6,6 +6,8 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
+ * 注册全局线程池，并设置其状态为启用
+ *
  * @Author tbc by 2020-10-25
  */
 public class GlobalExecutorImportSelector implements ImportBeanDefinitionRegistrar {
